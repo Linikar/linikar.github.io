@@ -1,0 +1,63 @@
+body {
+    font-family: 'Alexandria';
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color:white;
+  }
+  
+  input {
+    font-size: 24px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  #feedback {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  #counter {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(77, 77, 214);
+    font-weight:bold;
+  }
+
+  #piInput {
+    font-size: 24px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid black;
+  }
+
+  .topnav {
+    background-color: rgb(95, 52, 95);
+    text-align:center;
+    overflow:hidden;
+  }
+
+  .topnav li {
+    display:inline;
+  }
+
+  .topnav a {
+    float:none;
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(168, 168, 168);
+    color:black;
+  }
+
+  .topnav a.active {
+    background-color:rgb(175, 95, 175);
+    color: white;
+  }
