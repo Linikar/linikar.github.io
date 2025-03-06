@@ -10,7 +10,7 @@ document.body.appendChild(counter);
 
 input.addEventListener("beforeinput", (e) => {
   if (e.data && !e.data.match(/[0-9.]/)) {
-    e.preventDefault();
+    e.preventDefault(); 
   }
   if (e.data === "." && input.value.includes(".")) {
     e.preventDefault(); 
