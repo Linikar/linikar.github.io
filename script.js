@@ -12,7 +12,11 @@ input.addEventListener("beforeinput", (e) => {
   if (e.data && !e.data.match(/[0-9.]/)) {
     e.preventDefault();
   }
+  if (e.data === "." && input.value.includes(".")) {
+    e.preventDefault(); 
+  }
 });
+
 
 
 input.addEventListener("input", () => {
