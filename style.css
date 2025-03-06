@@ -30,7 +30,10 @@ body {
     padding: 10px;
     outline: none;
     border: 2px solid black;
+    text-align: left; 
+    direction: rtl; 
   }
+  
 
   .topnav {
     background-color: rgb(95, 52, 95);
@@ -61,3 +64,5 @@ body {
     background-color:rgb(175, 95, 175);
     color: white;
   }
+
+  
