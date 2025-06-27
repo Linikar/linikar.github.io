@@ -4,19 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
-  <title>Pi Memorizer</title>
+  <title>Pi Memorizer - Test</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <body class="test-page"></body>
+
 <div class="topnav">
     <li><a href="index.html">Practice</a></li>
     <li><a class="active" href="test.html">Test</a></li>
     <li><a href="ref.html">Learn</a></li>
     </div>
-      
-    <h1>&prod; Test</h1>
-  <p>Work in progress</p>
 
+    <h1>&prod; - Test</h1>
+    <div id="livesContainer">
+        <span class="heart full-heart">&hearts;</span>
+        <span class="heart full-heart">&hearts;</span>
+        <span class="heart full-heart">&hearts;</span>
+    </div>
+  <p>Type the digits of pi:</p>
+  <div id="inputWrapper">
+    <div id="highlightedInput"></div>
+    <input type="text" id="piInput" inputmode="decimal" pattern="[0-9.]*" autocomplete="off" placeholder="3.14...">
+  </div>
+  <p id="feedback"></p>
+  <p id="digitCounter">Digits entered: 0</p>
+  <button id="resetButton" style="display: none;">Try Again</button>
+  <p id="highScoreDisplay">High Score: 0</p>
+
+  <script src="script.js"></script>
 </body>
 </html>
