@@ -9,15 +9,15 @@ if (currentPage === "index.html") {
   piBackground.id = "piBackground";
   document.body.appendChild(piBackground);
 
-  const piDigits = pi.slice(500);
+  // Create one long, continuous string of pi digits.
+  // We remove the decimal so it's just a stream of numbers.
+  const piDigitsOnly = pi.replace('.', '');
+  
+  // Repeat the string many times to ensure it's long enough to fill any screen.
+  const backgroundText = piDigitsOnly.repeat(100); 
 
-  const formattedPiDigits = piDigits
-    .match(/.{1,200}/g)
-    .join("\n");
+  piBackground.textContent = backgroundText;
 
-  const repeatedDigits = Array(50).fill(formattedPiDigits).join("\n");
-
-  piBackground.textContent = repeatedDigits;
 
   const input = document.getElementById("piInput");
   const feedback = document.getElementById("feedback");
@@ -226,3 +226,4 @@ if (currentPage === "index.html") {
     });
   });
 }
+
